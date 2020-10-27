@@ -8,8 +8,8 @@
     "declarations": true
   },
   "scripts": {
-    "start:qa": "npm run compile  && egg-scripts start  --ignore-stderr --port=7032 --env=prod --daemon --title=egg-server-Hoolinks-legion-Server-qa",
-    "stop:qa": "egg-scripts stop --title=egg-server-Hoolinks-legion-Server-qa",
+    "start:qa": "npm run compile  && egg-scripts start  --ignore-stderr --port=7032 --env=prod --daemon --title=egg-legions-lowcode-server-qa",
+    "stop:qa": "egg-scripts stop --title=egg-legions-lowcode-server-qa",
     "dev": "egg-bin dev --port 7012",
     "debug": "egg-bin debug --port 7012",
     "test-local": "egg-bin test",
