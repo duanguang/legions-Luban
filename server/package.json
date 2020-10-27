@@ -1,0 +1,74 @@
+{
+  "name": "hoolinks_legion_server",
+  "version": "1.0.0",
+  "description": "调度平台服务端了55k",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start:qa": "npm run compile  && egg-scripts start  --ignore-stderr --port=7032 --env=prod --daemon --title=egg-server-Hoolinks-legion-Server-qa",
+    "stop:qa": "egg-scripts stop --title=egg-server-Hoolinks-legion-Server-qa",
+    "dev": "egg-bin dev --port 7012",
+    "debug": "egg-bin debug --port 7012",
+    "test-local": "egg-bin test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "egg-bin cov",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "ci": "npm run lint && npm run cov && npm run tsc",
+    "compile": "npm run tsc",
+    "autod": "autod",
+    "lint": "tslint --project . -c tslint.json",
+    "clean": "ets clean"
+  },
+  "dependencies": {
+    "egg": "^2.6.1",
+    "egg-cors": "^2.2.0",
+    "egg-jwt": "^3.1.6",
+    "egg-mongoose": "^3.2.0",
+    "egg-scripts": "^2.6.0",
+    "egg-socket.io": "^4.1.5",
+    "egg-swagger-doc": "^2.3.2",
+    "egg-validate": "^2.0.2",
+    "jenkins-api": "^0.3.1",
+    "koa-proxy": "^0.8.0",
+    "lru-cache": "^5.1.1",
+    "path-to-regexp": "^3.0.0",
+    "uuid": "^3.3.3",
+    "zlib": "^1.0.5",
+    "terminate": "^2.1.2",
+    "shelljs": "^0.8.3",
+    "recast": "^0.18.3",
+    "legions-utils-ast": "^0.0.8"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.16.0",
+    "tslib": "^1.9.0",
+    "tslint": "^5.0.0",
+    "tslint-config-egg": "^1.0.0",
+    "typescript": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "author": "",
+  "license": "MIT"
+}

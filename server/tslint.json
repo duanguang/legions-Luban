@@ -1,0 +1,12 @@
+{
+  "extends": ["tslint-config-egg"],
+  "rules": {
+    "noUnusedLocals": false,
+    "jsdoc-format": false
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  }
+}

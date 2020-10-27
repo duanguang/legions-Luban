@@ -1,0 +1,96 @@
+{
+	"success": true,
+	"result": [
+		{
+			"key": "WB000",
+			"title": "工作台",
+			"content": null,
+			"path": "#/home/workbench",
+			"closable": false,
+			"children": [],
+			"deep": ["WB000"],
+			"iconurl": "/assets/icon/gongzuotail.png",
+			"templateType": ""
+		},
+		{
+			"key": "Legion0001",
+			"title": "鲲鹏",
+			"content": "",
+			"path": "#",
+			"closable": false,
+			"deep": ["Legion0001"],
+			"iconurl": "",
+			"templateType": null,
+			"children": [
+				{
+					"key": "Legion00010001",
+					"title": "资源调度",
+					"content": null,
+					"path": "#/home/sandbox",
+					"closable": false,
+					"children": [],
+					"deep": ["Legion0001", "Legion00010001"],
+					"iconurl": "",
+					"templateType": null
+				},
+				{
+					"key": "Legion00010002",
+					"title": "项目构建",
+					"content": null,
+					"path": "#/home/jenkins",
+					"closable": false,
+					"children": [],
+					"deep": ["Legion0001", "Legion00010002"],
+					"iconurl": "",
+					"templateType": null
+				}
+			]
+		},
+		{
+			"key": "Legion0002",
+			"title": "用户管理",
+			"content": "",
+			"path": "#",
+			"closable": false,
+			"deep": ["Legion0002"],
+			"iconurl": "",
+			"templateType": null,
+			"children": [
+				{
+					"key": "Legion00020001",
+					"title": "用户列表",
+					"content": null,
+					"path": "#/home/system/userManager",
+					"closable": false,
+					"children": [],
+					"deep": ["Legion0002", "Legion00020001"],
+					"iconurl": "",
+					"templateType": null
+				}
+			]
+		},
+		{
+			"key": "Legion0003",
+			"title": "个人中心",
+			"content": "",
+			"path": "#",
+			"closable": false,
+			"deep": ["Legion0003"],
+			"iconurl": "",
+			"templateType": null,
+			"children": [
+				{
+					"key": "Legion00030001",
+					"title": "个人信息",
+					"content": null,
+					"path": "#/home/user/userInfo",
+					"closable": false,
+					"children": [],
+					"deep": ["Legion0003", "Legion00030001"],
+					"iconurl": "",
+					"templateType": null
+				}
+			]
+		}
+	]
+}
